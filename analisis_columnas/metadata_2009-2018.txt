@@ -1,0 +1,45 @@
+
+1 FL_DATE - Fecha del vuelo, aa/mm/dd			(1,2,3) (desglozar)
+2 OP_CARRIER - Identificador de aerolínea		(9) (verificar)
+3 OP_CARRIER_FL_NUM - Número de vuelo			(10)
+4 ORIGIN - Código de aeropuerto inicial			(17)
+5 DEST - Código de aeropuerto de destino		(18)
+
+6 CRS_DEP_TIME - Hora de salida planificada		(6)
+7 DEP_TIME - Hora de salida real			(5)
+8 DEP_DELAY - Retraso total en la salida en minutos	(16)
+
+9 TAXI_OUT - El tiempo transcurrido entre la salida de	(BORRAR)
+	la puerta del aeropuerto de origen y las ruedas
+10 WHEELS_OFF: el momento en que las ruedas de la 	(BORRAR)
+	aeronave dejan el suelo
+11 WHEELS_ON: el momento en que las ruedas del avión	(BORRAR)
+	tocan el suelo
+12 TAXI_IN - El tiempo transcurrido entre la puesta en	(BORRAR) 
+	marcha y la llegada a la puerta del aeropuerto 
+	de destino
+
+13 CRS_ARR_TIME - Hora de llegada planificada		(8)
+14 ARR_TIME - Hora de llegada real			(7)
+15 ARR_DELAY - Retraso total en la llegada en minutos	(15)
+
+16 CANCELLED - Vuelo cancelado (1 = cancelado)		(22)
+17 CANCELLATION_CODE - Motivo de la cancelación del	(23) 	
+	vuelo: A - Aerolínea/Transportista; B - Tiempo; 
+	C - Sistema Aéreo Nacional; D-Seguridad
+18 DIVERTED - Aeronave que aterrizó en 
+	aeropuerto fuera de horario
+19 CRS_ELAPSED_TIME - Cantidad de tiempo planificado 	(13)
+		necesario para el viaje de vuelo
+20 ACTUAL_ELAPSED_TIME - TIEMPO EN EL AIRE + 		(BORRAR)
+	TAXI ENTRADA + TAXI SALIDA
+21 AIR_TIME - La duración del tiempo entre las 		(BORRAR)
+	ruedas_apagadas y las ruedas_encendidas
+22 DISTANCE - Distancia entre dos aeropuertos		(19)	
+23 CARRIER_DELAY - Retraso causado por la 		(25) 
+	aerolínea en minutos
+24 WEATHER_DELAY - Retraso causado por el clima		(26)
+25 NAS_DELAY - Retraso causado por el sistema de aire	(27)
+26 SECURITY_DELAY					(28)
+27 LATE_AIRCRAFT_DELAY - Retraso causado por seguridad	(29)
+28 Unnamed: 27 - Columna inútil				(BORRAR)
