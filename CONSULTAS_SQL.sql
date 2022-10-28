@@ -267,6 +267,46 @@ WHERE v.ID_EstadoVuelo = 'B';
 
 
 
+-- Exportando datos 
+SELECT v.Anio, v.Mes, v.Dia, v.ID_Vuelo, v.ID_Aeropuerto_O, v.Hora_SalidaR, a.Latitud, a.Longitud
+INTO OUTFILE 'F:/PROYECTO_GRUPAL/extracciones/vueloSA.csv'
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '
+'
+FROM vuelo as v
+JOIN aeropuerto_o as a
+ON v.ID_Aeropuerto_O = a.ID_Aeropuerto
+WHERE v.ID_DepTime = 'A' and v.Anio = 2018;
+
+
+
+-- TRABAJO DE HEROKU
+
+-- Exportando datos de la tabla vuelo para el año 2018
+SELECT * 
+INTO OUTFILE 'F:/PROYECTO_GRUPAL/DATA_2018/vuelo.csv'
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '
+'
+FROM vuelo
+WHERE Anio = 2018;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
