@@ -1,8 +1,8 @@
 import pymysql
-host = 'iu51mf0q32fkhfpl.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'
-database = 'yv9v0x1jhaa2cz3v'
-user = 'onshtn8w8en5oyay'
-password = 'a6g8e1wccfbie7dv'
+host = '---'
+database = '---'
+user = '---'
+password = '---'
 
 def Pregunta1():
     conexion = pymysql.connect (host=host, database=database, user =user, password=password)
